@@ -1,0 +1,136 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.atura{
+    background-image: url("./images/image1.png");
+    opacity: calc(2);
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:auto;
+    width: 100%;
+    padding-bottom: 50px;
+    background-size:cover;
+    object-fit: cover;
+    box-shadow: inset 0 0 100px 50px;
+    background-blend-mode: multiply;
+ 
+   
+    
+}
+
+
+.oj{
+        background-image: url("./images/image2.png");
+        opacity: calc(1);
+        background-repeat: no-repeat;
+        height: auto;
+        background-size: cover;
+        box-shadow: inset 0 0 100px 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        object-fit: cover;
+        margin-top: 50px;
+        width:100%;
+        padding-bottom: 50px;
+        
+    }
+
+
+
+.atu{
+    border: 1px solid white;
+   
+}
+
+.marvel{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+.dud{
+    overflow-x: scroll;
+    overflow-y: hidden;
+ 
+}
+
+
+.clao{
+    display: flex;
+    align-items: center;
+    gap:20px
+  }
+
+
+  ::-webkit-scrollbar{
+    display:none;
+  }
+
+  
+
+
+@media screen and (max-width:868px) {
+    .clao{
+        padding-bottom: 30%;
+      display: flex;
+      flex-direction: column;  
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      width: 57%;
+     background-color:black;
+      z-index: 2;
+      transition: 1s;
+      color: white;
+    }
+
+
+    
+.atura{
+  
+  height:auto;
+  background-repeat:round;
+  background-size:contain;
+  object-fit: cover;
+  
+ 
+   
+    
+}
+
+
+.oj{
+    background-repeat:repeat;
+      height: auto;
+      background-size: contain;
+        object-fit: contain;
+      
+        
+    }
+
+  
+    
+  .active{
+    left:0;
+ 
+  }
+  
+    
+  }
+
